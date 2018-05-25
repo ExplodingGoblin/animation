@@ -1,0 +1,129 @@
+@keyframes example {
+    0% {
+        background-color: blue;
+    }
+    5% {
+        background-color: red;
+    }
+    10% {
+        background-color: salmon;
+    }
+    15% {
+        background-color: blanchedalmond;
+    }
+    20% {
+        background-color: black;
+    }
+    25% {
+        background-color: blueviolet;
+    }
+    30% {
+        background-color: darkcyan;
+    }
+    35% {
+        background-color: lawngreen;
+    }
+    40% {
+        background-color: darkslateblue;
+    }
+    45% {
+        background-color: deepskyblue;
+    }
+    50% {
+        background-color: cornflowerblue;
+    }
+    55% {
+        background-color: fuchsia;
+    }
+    60% {
+        background-color: chartreuse;
+    }
+    65% {
+        background-color: crimson;
+    }
+    70% {
+        background-color: deeppink;
+    }
+    75% {
+        background-color: darkkhaki;
+    }
+    80% {
+        background-color: chocolate;
+    }
+    85% {
+        background-color: lavender;
+    }
+    90% {
+        background-color: gold;
+    }
+    95% {
+        background-color: hotpink;
+    }
+    100% {
+        background-color: olive;
+    }
+}
+
+
+#croom {
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(1100deg);
+    }
+}
+
+
+#background {
+    animation-name: example;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    background-size: cover;
+    background-image: "pics/Epic_sax_guy.gif";
+}
+
+
+#sans {
+    animation-name: sans;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sans {
+    27% {
+        transform: rotate(70deg);
+    }
+    34% {
+        transform: skewX(300deg);
+    }
+    56% {
+        transform: skewX(405deg);
+    }
+    57% {
+        transform: skewY(100deg);
+    }
+    68% {
+        transform: scaleX(20);
+    }
+    83% {
+        transform: rotateX(250deg);
+    }
+    84% {
+        transform: rotateX(70deg);
+    }
+    87% {
+        transform: skewY(185deg);
+    }
+    95% {
+        transform: scaleY(50);
+    }
+    100% {
+        transform: translateY(30deg)
+    }
+}
